@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               alignment: Alignment.bottomCenter,
               child: Text(
-                "25:00",
+                "$totalSeconds",
                 style: TextStyle(
                     color: Theme.of(context).cardColor,
                     fontSize: 89,
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: IconButton(
                 color: Theme.of(context).cardColor,
                 iconSize: 120,
-                onPressed: () {},
+                onPressed: onStartPressed,
                 icon: const Icon(Icons.play_circle_outline),
               ),
             ),
